@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, session, redirect, make_response
+from flask_cors import CORS  # <-- Make sure this line is present
 import os
 import base64
 import json
