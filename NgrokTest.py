@@ -12,7 +12,7 @@ app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024  # 50MB max file size
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-key-change-in-production')
 
 # Enable CORS for all routes and allow your Netlify domain
-CORS(app, resources={r"/*": {"origins": ["https://math-ocr-frontend.netlify.app", "http://localhost:*"]}})
+CORS(app, resources={r"/*": {"origins": ["https://monumental-medovik-78fff7.netlify.app/", "http://localhost:*"]}})
 
 # Define log file path
 LOG_FILE = '/tmp/login_logs.json'
